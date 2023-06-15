@@ -48,3 +48,5 @@ venv/bin/slugify
 venv/bin/virtualenv
 venv/bin/virtualenv-clone
 venv/include/site/python3.11/greenlet/greenlet.h
+
+.DS_Store
