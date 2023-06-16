@@ -15,6 +15,6 @@ preprocessed_image = preprocess_image(image)
 # For now, this will be used to verify preprocessing.
 output_path = "OutputImages/preprocessed.jpg"
 
-# Save grayscaled image
+# Save preprocessed image
 cv2.imwrite(output_path, preprocessed_image)
 print("Binary image saved, please verify.")
