@@ -16,6 +16,8 @@ As always, you can install the required packages using `pip install -r requireme
 
 :star: 4-STEP PREPROCESSING :star:
 
-To better optimize the OCR phase, we first convert the image to grayscale and perform Otsu's Binarization, which computes a threshold white/black value across the entirety of the image. We follow this by performing a check for a rotational skew greater than 3 degrees, and fix as necessary. This will improve performance of the OCR engine. We finish by applying noise reduction to the image. 
+To better optimize the OCR phase, we first convert the image to grayscale and perform Otsu's Binarization, which computes a threshold white/black value across the entirety of the image. We follow this by performing a check for a rotational skew greater than 3 degrees, and fix as necessary. This will improve performance of the OCR engine. We finish by applying noise reduction to the image.
+
+NOTE on noise reduction: Typically this is done to grayscale or color images, but for binary images, we can use OpenCV's morphological operations to attack very small regions or thin lines in the image. This can mess with detail if done incorrectly, so it will be set fairly conservatively.
 
 <hr>

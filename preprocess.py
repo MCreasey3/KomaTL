@@ -35,4 +35,10 @@ def preprocess_image(image):
     matrix = cv2.getRotationMatrix2D(center, angle, 1.0)
     skewcorrected_image = cv2.warpAffine(binary_preprocess, matrix, (width, height), flags=cv2.INTER_CUBIC, borderMode=cv2.BORDER_REPLICATE)
 
-    return skewcorrected_image
+    # return skewcorrected_image
+
+
+    # Noise reduction via mathematical morphology
+    kernel = numpy.ones((3, 3), numpy.uint8)
+    denoised_image = cv2.morphologyEx(skewcorrected_image, cv2.MORPH_OPEN, kernel)
+    return denoised_image
