@@ -24,4 +24,8 @@ NOTE on noise reduction: Typically this is done to grayscale or color images, bu
 
 :large_blue_diamond: OPTICAL CHARACTER RECOGNITION :large_blue_diamond:
 
-My OCR engine of choice for this project is Tesseract OCR, developed by Google. Traditionally, Tesseract is used with its standard C and C++ APIs. However, KomaTL utilizes `pytesseract`, a Python wrapper for Tesseract. 
+My OCR engine of choice for this project is Tesseract OCR, developed by Google. Traditionally, Tesseract is used with its standard C and C++ APIs. However, KomaTL utilizes `pytesseract`, a Python wrapper for Tesseract.
+
+Additionally, using Pytesseract requires Tesseract and Pillow (PIL fork).
+
+<hr>
