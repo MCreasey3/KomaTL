@@ -51,3 +51,5 @@ venv/include/site/python3.11/greenlet/greenlet.h
 
 .DS_Store.DS_Store
 .DS_Store
+
+config.py
