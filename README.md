@@ -26,4 +26,6 @@ NOTE on noise reduction: Typically this is done to grayscale or color images, bu
 
 My OCR engine of choice for this project is the OCR.space API, which can be accessed here at [Link text](ocr.space). Originally, I had planned to use Pytesseract, which is a Python wrapper for Tesseract OCR, developed by Google. After more consideration, the free OCR.space API is a better choice for the scale of this project, and is far easier to set up and get started with.
 
+NOTE: Because the use of the OCR API requires you to have a key, users will need to a `config.py` file to the project and add their own API key.
+
 <hr>
